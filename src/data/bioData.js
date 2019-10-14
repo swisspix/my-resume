@@ -1,0 +1,1 @@
+const bioData = "Agé de 25 ans, détenteur d'un bachelor en ingénierie des médias,  je me passionne pour la musique, vidéo, la communication et pour le monde du digital."
