@@ -7,7 +7,10 @@ export default function PortfolioHeader() {
     return (
         <div>
             <Link to="/">
-                <Title type="secondary" level={4}><Icon type="arrow-left" /> Retour au CV </Title>
+                <Button>
+                    <Icon type="left" />
+                    Retour au profil
+                </Button>
             </Link>
         </div>
     )

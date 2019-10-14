@@ -62,14 +62,14 @@ class AboutContainer extends Component {
                         content={<Langues/>}
                     />
                     <AnimatedBox
-                        title='Me contacter'
-                        icon={"mail"}
-                        content={<Contact/>}
-                    />
-                    <AnimatedBox
                         title='Mes projets'
                         icon={"folder-open"}
                         content={<Projets/>}
+                    />
+                    <AnimatedBox
+                        title='Me contacter'
+                        icon={"mail"}
+                        content={<Contact/>}
                     />
                 </StackGrid>
         )

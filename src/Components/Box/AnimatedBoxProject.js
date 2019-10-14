@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
 import {useSpring, animated, config} from 'react-spring'
-import { Typography,Button,Card,Icon } from 'antd';
+import { Typography,Button,Card,Icon, Modal } from 'antd';
 import { useMeasure} from '../../utils/helpers';
 import ReactPlayer from 'react-player'
+
 
 function AnimatedBox(props) {
     const { Title } = Typography;
     const { Meta } = Card;
     const[hovered, setHovered] = useState(false)
+    const[modalOpen, setmodalOpen]= useState(false)
     
     const divStyle = useSpring({
         zIndex:1,
@@ -16,7 +18,7 @@ function AnimatedBox(props) {
         height: 'auto',
         // marginTop : appeared ? 0 : 0,
         // opacity: appeared ? 1 : 0,
-        transform: hovered ? 'scale(1)' : 'scale(1)',
+        transform: hovered ? 'scale(1.02)' : 'scale(1)',
         boxShadow: hovered ? "0 4px 4px 0px #1c1b24" : "0 0px 0px 0px #1c1b24",
     })
 
@@ -34,12 +36,34 @@ function AnimatedBox(props) {
             style={divStyle} 
             config={config.default}
             >
-            <Card size="small" bordered={false}>
-                <ReactPlayer preload={true} width='100%' height='100%' url={props.url} />
-                <p>{props.title}</p>
-                <hr/>
-                <p>{props.description}</p>
-                <Meta title="voir plus" description="www.instagram.com" />
+            <Card 
+                size="small" 
+                bordered={false}
+                cover={
+                    <img
+                      alt="example"
+                      src={props.img}
+                />}
+                actions={[
+                    <Icon type="like" />,
+                    <Icon onClick={()=> setmodalOpen(true)} type="play-circle" />
+                  ]}
+                >
+                <Modal
+                    visible={modalOpen}
+                    onOk={()=> setmodalOpen(false)}
+                    onCancel={()=> setmodalOpen(false)}
+                    footer={null}
+                    width={680}
+                    closable={false}
+                    forceRender={true}
+                    >
+                <ReactPlayer url={props.url} />
+                </Modal>
+                <Meta
+                    title={props.title}
+                    description={props.description}
+                />
             </Card>
         </animated.div>
     )

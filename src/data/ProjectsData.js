@@ -32,7 +32,7 @@ const VideosData = [
     },
     {
         id:'3',
-        nom:'"#DontCrackUnderpressure" en animation pour Images 3D',
+        nom:'"#DontCrackUnderpressure" en animation pour Images3',
         url:'https://vimeo.com/355950271',
         description:"Ce projet illustre mes recherches effectuées sur la faisabilité pour l'agence de production marketing Images3 qui avait pour but de reflechir à la question de l'affichage digital. Cette affiche de Tag Heuer a ici été animée afin de montrer un exemple de faisabilité d'animations, de base sur une affiche statique.",
         miniature:DCUP,
@@ -40,9 +40,9 @@ const VideosData = [
     },
     {
         id:'4',
-        nom:'Hydrocontest 2017 - VideoRecap',
+        nom:"Hydrocontest 2017 - VideoRecap'",
         url:'https://www.youtube.com/watch?v=EKyJR2DoRQw',
-        description:"'Durant le concours interuniversitaires de modélisme de bateau, j'ai suivi l'équipe de la HEIG-VD pendant les 7 jours à St-Tropez pour produire, chaque jours du concours une vidéo retrançant les peripeties de mes confères. Apparemment le projet a plus puisque nous avons remporté le prix de communication cette année là !",
+        description:"Durant le concours interuniversitaires de modélisme de bateau, j'ai suivi l'équipe de la HEIG-VD pendant les 7 jours à St-Tropez pour produire, chaque jours du concours une vidéo retrançant les peripeties de mes confères. Apparemment le projet a plus puisque nous avons remporté le prix de communication cette année là !",
         miniature:Hydro2017,
         annee:'2017'
     },

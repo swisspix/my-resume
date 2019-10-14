@@ -8,13 +8,14 @@ const ExperiencesData = [
     {
         id: 0,
         lieu:'Sports Discount Lausanne',
-        poste: 'Digital Specialist/Journaliste',
+        poste: 'Manager backoffice et digital',
         description:"Mise à jour des descriptions du site web et reflexion générale sur le stratégies marketing du magasin",
         dateDebut:'Juil. 2019',
         dateFin:"Aujourd'hui",
         imgsrc: SDLogo,
         link:'https://www.sports-discount.net/fr/',
-        showodal:false
+        showodal:false,
+        color:'green'
     },
     {
         id: 1,

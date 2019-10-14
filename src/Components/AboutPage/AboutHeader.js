@@ -20,9 +20,9 @@ export default function AboutHeader() {
     })
 
     return (
-            <Row type="flex" justify="space-between">
+            <Row >
                 <Col sm={24} md={4}>
-                    <Avatar style={{margin:20}} size={210} src={profilePic} />
+                    <Avatar style={{textAlign:'center'}} size={170} src={profilePic} />
                 </Col>
                 <Col sm={24} md={8}>
                     <Title style={{color:'white',fontSize:50}}>
@@ -38,19 +38,6 @@ export default function AboutHeader() {
                             "Retrouvez ci-dessous mon parcours professionnel, mes compétences, les formations que j'ai suivies ainsi que les langues que je parle aujourd'hui.", ]} 
                             />
                 </Col >
-                <Col sm={24} md={4}>
-                </Col>
-                <Col sm={24} md={4}>
-                        {/* <Link to="/portfolio">
-                            <animated.div 
-                                style={link}
-                                onMouseEnter={() => setHovered(true)}
-                                onMouseLeave={() => setHovered(false)}>
-                                <p type="secondary" style={{}}>Mon portfolio <Icon type="arrow-right" /></p>
-                            </animated.div>
-                        </Link> */}
-                    
-                </Col>
             </Row>
     )
 }

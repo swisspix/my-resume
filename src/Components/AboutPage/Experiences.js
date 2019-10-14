@@ -47,7 +47,7 @@ export default class Experiences extends Component {
     
     render() {
         const exData =  ExperiencesData.map(item => 
-            <Timeline.Item color='#3498db' key={item.id}>
+            <Timeline.Item color={item.color} key={item.id}>
                 <h5 >{item.dateDebut} - {item.dateFin}</h5>
                 <h4>{item.lieu}</h4>
                 <p><a onClick={()=> this.info(item.id)}>{item.poste}</a></p>

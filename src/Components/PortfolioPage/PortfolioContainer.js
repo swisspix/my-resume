@@ -7,6 +7,7 @@ import AnimatedBoxProject from '../Box/AnimatedBoxProject'
 
 import ProjectData from '../../data/ProjectsData'
 import Item from 'antd/lib/list/Item'
+import ModalVideo from 'react-modal-video'
 
 class PortfolioContainer extends Component {
 
@@ -29,22 +30,27 @@ class PortfolioContainer extends Component {
             <AnimatedBoxProject
                 url={item.url}
                 title={item.nom}
-                description={item.description}/>
+                description={item.description}
+                annee={item.annee}
+                img={item.miniature}/>
         </div>
         
         )
 
         return (
+            <>
             <StackGrid
-                    columnWidth={width <= 768 ? '100%' : 400}
-                    gridRef={grid => this.grid = grid}
-                    style={{marginTop : 10}}
-                    gutterWidth={6}
-                    gutterheight={6}
-                    appearDelay={0}
+                monitorImagesLoaded={false}
+                columnWidth={width <= 768 ? '100%' : 300}
+                gridRef={grid => this.grid = grid}
+                style={{marginTop : 10}}
+                gutterWidth={10}
+                gutterheight={10}
+                appearDelay={100}
                 >
             {videoProjects}
             </StackGrid>
+            </>
         )
     }
     
