@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import {BrowserRouter as Router, __RouterContext, Switch, Route} from 'react-router-dom'
+import {HashRouter, BrowserRouter as Router, __RouterContext, Switch, Route} from 'react-router-dom'
 import {Layout} from 'antd';
 import  ZIndex  from 'react-z-index'
 
@@ -21,7 +21,7 @@ const App = () => {
   //   leave:{opacity :0}
   // });
   return (
-      <Router>
+      <HashRouter basename='/'>
         {/* <ZIndex index={10}>
           <HeadroomNav/>
         </ZIndex> */}
@@ -35,7 +35,7 @@ const App = () => {
           
         
         <Footer style={{ textAlign: 'center' }}>CV portfolio Antoine Lot ©2019 Créé from scratch par Antoine Lot</Footer>
-      </Router>
+      </HashRouter>
   )
 }
 
