@@ -5,13 +5,22 @@ const { Title, Paragraph, Text } = Typography;
 export default function Apropos() {
     return (
         <>
-        <Title>Introduction</Title>
         <Paragraph>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            Passionné des nouvelles technologies, du <Text strong>monde de la communication</Text>, des <Text strong>arts modernes</Text> et de la <Text strong>vidéo</Text>, j’ai su au cours de mon parcours accumuler des expériences qui sauront aller dans le sens de mes atouts et mes compétences.        
         </Paragraph>
         <Paragraph>
-            Sed ut perspiciatis unde omnisotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            Voilà maintenant 10 ans que j’ai atterris en Suisse au Gymnase de Burier et que j’ai su m’orienter vers ce qui me fait aujourd’hui le plus vibrer : le monde du numérique ! Ce que vous trouverez dans ce CV/Portfolio retrace l’ensemble de mes expériences passées et les outils que j’ai pu utiliser au cours de celles-ci.        
         </Paragraph>
+        <Paragraph>
+            J'ai pu travailler avec plusieurs entreprises variée comme <a href="https://images3.ch/">Images3</a>, 
+            le <a href="https://cullyjazz.ch/fr">Cully Jazz Festival</a>, 
+            <a href="https://www.bemyangel.ch/"> la FVA</a> et tout un magasin de vente d'articles de vente en ligne 
+            <a href="https://www.sports-discount.net/fr/"> Sports Discount</a>. 
+        </Paragraph>
+        <Paragraph>
+            Bonne visite ! 
+        </Paragraph>
+        <Text mark>Antoine Lot</Text>
         </>
     )
 }

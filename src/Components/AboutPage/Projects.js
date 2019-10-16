@@ -22,7 +22,7 @@ export default function Projets() {
         {miniaturesVideos}
         <br/>
         <br/>
-        <Link to="/portfolio"><Button>Voir les vidéos</Button></Link>
+        <Link to="/portfolio"><Button block>Voir mes projets</Button></Link>
         </>
     )
 }

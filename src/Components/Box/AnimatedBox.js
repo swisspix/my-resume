@@ -40,7 +40,7 @@ function AnimatedBox(props) {
             style={divStyle} 
             config={config.default}
             >
-            <Card type="inner" title={title} extra={icon}>
+            <Card title={title} extra={icon}>
                 {props.content}
             </Card>
         </animated.div>

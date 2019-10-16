@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useSpring, animated, config} from 'react-spring'
-import { Typography,Button,Card,Icon, Modal } from 'antd';
+import { Typography,Button,Card,Icon, Modal, Popover } from 'antd';
 import { useMeasure} from '../../utils/helpers';
 import ReactPlayer from 'react-player'
 
@@ -45,8 +45,8 @@ function AnimatedBox(props) {
                       src={props.img}
                 />}
                 actions={[
-                    <Icon type="like" />,
-                    <Icon onClick={()=> setmodalOpen(true)} type="play-circle" />
+                    <a onClick={()=> setmodalOpen(true)} type="play-circle">Voir</a>
+                    
                   ]}
                 >
                 <Modal
@@ -58,7 +58,7 @@ function AnimatedBox(props) {
                     closable={false}
                     forceRender={true}
                     >
-                <ReactPlayer url={props.url} />
+                <ReactPlayer centered={true} playing={modalOpen} width='100%' url={props.url} />
                 </Modal>
                 <Meta
                     title={props.title}

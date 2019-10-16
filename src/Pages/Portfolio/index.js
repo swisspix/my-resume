@@ -7,19 +7,16 @@ import PortfolioContainer from '../../Components/PortfolioPage/PortfolioContaine
 
 import BackgroundImg from '../../img/zach2.jpg'
 
+import AbsoluteWrapper from '../../Components/Box/AbsoluteWrapper'
+
 export default function PortfolioPage() {
     return (
-        <Parallax
-            bgImage={BackgroundImg}
-            bgImageAlt="the cat"
-            strength={100}
-            appearDelay={100}>
-            <Header
-            content={<PortfolioHeader/>}
-            color="#4681A6" />
-            <PortfolioContainer/>
-        </Parallax>
-            
-            
+            <Parallax
+                bgImage={BackgroundImg}
+                bgImageAlt="the cat"
+                strength={100}
+                appearDelay={100}>
+                    <PortfolioContainer/>
+            </Parallax>
     )
 }

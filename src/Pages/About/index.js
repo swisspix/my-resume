@@ -7,28 +7,22 @@ import { Parallax} from 'react-parallax';
 
 import  ZIndex  from 'react-z-index'
 import AboutHeader from '../../Components/AboutPage/AboutHeader';
-import Header from '../../Components/Box/Header';
+import Header from '../../Components/AboutPage/AboutHeader';
+import AbsoluteWrapper from '../../Components/Box/AbsoluteWrapper';
 
 function AboutPage() {
         return (
-                <Parallax
-                    bgImage={BackgroundImg}
-                    bgImageAlt="the cat"
-                    strength={100}
-                    appearDelay={100}
-                >
-                    <div style={{ minHeight: '1000px' }}>
-                    <ZIndex index={2}>
-                        <Header 
-                            content={<AboutHeader/>}
-                            color="#4681A6" />
-                    </ZIndex>
-                    <ZIndex index={1}>
-                        <AboutContainer/>
-                    </ZIndex>
-                    </div>
-                    
-                </Parallax>
+            <Parallax
+                bgImage={BackgroundImg}
+                bgImageAlt="the cat"
+                strength={100}
+                appearDelay={100}
+            >
+                <Header/>
+                <div style={{ minHeight: '1000px' }}>
+                    <AboutContainer/>
+                </div>
+            </Parallax>
         )
     }
 

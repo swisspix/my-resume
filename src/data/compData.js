@@ -117,33 +117,28 @@ export const CompPanelData = [
     id:0,
     header:'Web',
     icon:<Icon type="chrome" />,
-    text:`J'ai su, au cours de mes études, parcourir un grand nombre d'outils necessaires au dévellopements 
-    d'applications Web sur le plan backend comme frontend.`,
+    text:`J'ai su, au cours de mes études, parcourir un grand nombre d'outils nécessaires au développement d'applications Web sur le plan backend comme frontend.`,
     listAvatars:webavatars
   },
   {
     id:1,
     header:"Video",
     icon:<Icon type="video-camera" />,
-    text:`La vidéo a toujours été une de mes plus grandes passions. Que ce soit derrière la caméra 
-    ,au montage ou sur un projet motion design, j'ai eu la chance d'appliquer mes compétences à plusieurs reprises durant
-    ces dernières années.`,
+    text:`La vidéo a toujours été une de mes plus grandes passions. Que ce soit derrière la caméra ,au montage ou sur un projet motion design, j'ai eu la chance d'appliquer mes compétences à plusieurs reprises durant ces dernières années.`,
     listAvatars:videoavatars
   },
   {
     id:2,
     header:"Création digitale",
     icon:<Icon type="picture" />,
-    text:`Création et animation de logo, composition d'affiches, de pages web... 
-    Je me fais un plaisir de réfléchir à des solutions viables et esthetiques dans la création Web.`,
+    text:`Création et animation de logo, composition d'affiches, de pages web... Je me fais un plaisir de réfléchir à des solutions viables et esthétiques dans la création Web.`,
     listAvatars:cdavatars
   },
   {
     id:3,
     header:"Gestion E-Commerce",
     icon:<Icon type="shop" />,
-    text:`J'ai su develloper des compétences dans la gestion de E-commerce d'un magasin en ligne. Du travail de gestion d'interface,
-    d'indexation de produits et d'optimisation de l'UX ont été de mise. `,
+    text:`J'ai su développer des compétences dans la gestion de E-commerce d'un magasin en ligne. Du travail de gestion d'interface, d'indexation de produits et d'optimisation de l'UX ont été de mise. `,
     listAvatars:cdavatars
   },
 ]

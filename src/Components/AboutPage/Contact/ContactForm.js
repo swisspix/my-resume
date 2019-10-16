@@ -7,18 +7,18 @@ import * as emailjs from 'emailjs-com'
 
 const validationSchema = Yup.object().shape({
     name : Yup.string()
-    .min(3, "Votre nom doit avoir plus de 3 lettres.")
+    .min(3, "Votre nom doit avoir plus de 3 lettres !")
     .max(255, "Doit être plus court que 255 caractères.")
-    .required("Veuillez entrer un nom."),
+    .required("Et votre nom ?"),
     email : Yup.string()
     .email("Votre adresse email doit être valide.")
     .max(255, "Votre adresse email doit être plus courte que 255.")
-    .required("Veuillez entrer une adresse email."),
+    .required("Votre adresse email pour vous repondre ?"),
     subject : Yup.string()
     .max(255, "Le sujet doit faire max. 255 char."),
     message : Yup.string()
-    .max(500, "Votre message est trop long ! (max 500 charactères)")
-    .required("Votre message est vide !")
+    .max(500, "max. 500 charactères pour les message")
+    .required("Je vous ecoute !")
 })
 
 export default function ContactFrom() {

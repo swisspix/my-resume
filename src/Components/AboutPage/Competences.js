@@ -13,6 +13,7 @@ export default function Competences({reload}) {
           {panel.text}
           
           <br/>
+          <br/>
           <Text strong>Outils utilisés :</Text>
           <br/>
         </p>

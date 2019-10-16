@@ -7,6 +7,7 @@ import Langues from './Langues';
 import Competences from './Competences'
 import Contact from './Contact/Contact'
 import Projets from './Projects'
+import Apropos from './Apropos'
 
 import StackGrid from "react-stack-grid";
 import sizeMe from 'react-sizeme';
@@ -42,15 +43,21 @@ class AboutContainer extends Component {
                 appearDelay={0}
             >
                     <AnimatedBox
-                        title='Mes experiences'
-                        icon={"profile"}
-                        content={<Experiences/>}
+                        title='Quelques mots'
+                        icon={"edit"}
+                        content={<Apropos/>}
                         />
                     <AnimatedBox
                         title='Mes competences'
                         icon={"tool"}
                         content={<Competences reload={()=> this.reloadWithdelay()}/>}
                     />
+                    <AnimatedBox
+                        title='Mes experiences'
+                        icon={"profile"}
+                        content={<Experiences/>}
+                        />
+                    
                     <AnimatedBox
                         title='Mes formations'
                         icon={"edit"}

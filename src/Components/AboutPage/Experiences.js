@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Timeline, Modal } from 'antd';
+import { Timeline, Modal, Popover } from 'antd';
 
 import ExperiencesData from '../../data/experiencesData'
 
@@ -51,6 +51,7 @@ export default class Experiences extends Component {
                 <h5 >{item.dateDebut} - {item.dateFin}</h5>
                 <h4>{item.lieu}</h4>
                 <p><a onClick={()=> this.info(item.id)}>{item.poste}</a></p>
+                
                 {/* <Button type="secondary" shape="circle" icon="search" /> */}
             </Timeline.Item>
         )

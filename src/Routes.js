@@ -1,17 +1,31 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
-import {Switch, Route} from 'react-router-dom'
-import Homepage from './Pages/Home/Homepage'
-import AboutPage from './Pages/About/aboutPage'
-import ContactPage from './Pages/Contact/ContactPage'
+import {Switch, Route, __RouterContext} from 'react-router-dom'
+import AboutPage from './Pages/About'
+import PortfolioPage from './Pages/Portfolio'
+
+import {animated, useTransition} from 'react-spring'
 
 export default function Routes() {
+
+    const { location, history } = useContext(__RouterContext)
+    console.log(location.pathname)
+
+    const transitions = useTransition(location, location => location.pathname, {
+        from:{opacity: 0},
+        enter:{opacity: 1},
+        leave:{opacity: 0},
+    })
     return (
-        <Switch>
-            {/* <Route path="/home"  component={props => <Homepage />} /> */}
-            <Route path="/" component={props => <AboutPage />} />
-            <Route path="/contact" component={props => <ContactPage />} />
-        </Switch>
+        <>
+        <animated.div >
+            <Switch>
+                <Route exact path="/" component={AboutPage} />
+                <Route exact path="/portfolio" component={PortfolioPage} />
+            </Switch>
+        </animated.div>
+        </>
+        
     )
         
 }
