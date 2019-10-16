@@ -12,11 +12,11 @@ export default function App() {
   const {Footer } = Layout;
 
   return (
-      <Router>
+      <HashRouter basename="/">
         <ZIndex index={4}>
           <Routes/>
         </ZIndex>
         <Footer style={{position:'fixed', textAlign: 'center' }}>CV portfolio Antoine Lot ©2019</Footer>
-      </Router>
+      </HashRouter>
   )
 }

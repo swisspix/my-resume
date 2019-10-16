@@ -20,9 +20,7 @@ export default function Projets() {
     return (
         <>
         {miniaturesVideos}
-        <br/>
-        <br/>
-        <Link to="/portfolio"><Button block>Voir mes projets</Button></Link>
+        <Link to="/portfolio">Voir mes projets</Link>
         </>
     )
 }

@@ -12,8 +12,8 @@ export default function Apropos() {
             Voilà maintenant 10 ans que j’ai atterris en Suisse au Gymnase de Burier et que j’ai su m’orienter vers ce qui me fait aujourd’hui le plus vibrer : le monde du numérique ! Ce que vous trouverez dans ce CV/Portfolio retrace l’ensemble de mes expériences passées et les outils que j’ai pu utiliser au cours de celles-ci.        
         </Paragraph>
         <Paragraph>
-            J'ai pu travailler avec plusieurs entreprises variée comme <a href="https://images3.ch/">Images3</a>, 
-            le <a href="https://cullyjazz.ch/fr">Cully Jazz Festival</a>, 
+            J'ai pu travailler avec plusieurs entreprises variée comme <a target="_blank" rel="noopener noreferrer" href="https://images3.ch/"></a>, 
+            le <a target="_blank" rel="noopener noreferrer" href="https://cullyjazz.ch/fr">Cully Jazz Festival</a>, 
             <a href="https://www.bemyangel.ch/"> la FVA</a> et tout un magasin de vente d'articles de vente en ligne 
             <a href="https://www.sports-discount.net/fr/"> Sports Discount</a>. 
         </Paragraph>
