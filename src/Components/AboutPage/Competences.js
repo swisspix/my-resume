@@ -8,7 +8,12 @@ export default function Competences({reload}) {
   const { Text } = Typography;
 
   const compPanels = CompPanelData.map((panel) =>
-    <Panel key={panel.id} header={panel.header} extra={panel.icon}>
+    <Panel 
+      forceRender={true}
+      key={panel.id} 
+      header={panel.header} 
+      extra={panel.icon}
+      >
         <p  style={{ paddingLeft: 24 }}>
           {panel.text}
           
@@ -27,9 +32,10 @@ export default function Competences({reload}) {
     
   return (
     <Collapse 
-      accordion 
+      accordion={true}
       bordered={false}
-      onChange={reload}>
+      onChange={reload}
+      expandIconPosition={'left'}>
         {compPanels}
     </Collapse>
   )

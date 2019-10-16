@@ -41,6 +41,7 @@ class AboutContainer extends Component {
                 gutterWidth={2}
                 gutterheight={2}
                 appearDelay={0}
+                duration={0}
             >
                     <AnimatedBox
                         title='Quelques mots'
