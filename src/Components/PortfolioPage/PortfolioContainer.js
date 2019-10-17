@@ -19,10 +19,7 @@ class PortfolioContainer extends Component {
 
     render() {
         const { 
-            size: { 
-              width
-            } 
-          } = this.props;
+            size: { width}  } = this.props;
 
     const videoProjects = ProjectData.map(item => 
         <div>
@@ -37,30 +34,17 @@ class PortfolioContainer extends Component {
         )
 
         return (
-            <>
-            
             <StackGrid
                 monitorImagesLoaded={false}
-                columnWidth={width <= 768 ? '100%' : 300}
+                columnWidth={width <= 768 ? '100%' : 270}
                 gridRef={grid => this.grid = grid}
-                style={{
-                    marginLeft:'auto', 
-                    marginRight:'auto', 
-                    maxWidth:1600,
-                    }}
-                gutterWidth={10}
+                gutterWidth={20}
                 gutterheight={5}
-                appearDelay={100}
+                appearDelay={140}
+                style={{marginTop:10}}
                 >
-            <Link to="/">
-                <Button style={{marginLeft:'50'}}>
-                    <Icon type="left" />
-                    Retour au profil
-                </Button>
-            </Link>
-            {videoProjects}
+                {videoProjects}
             </StackGrid>
-            </>
         )
     }
     

@@ -12,15 +12,16 @@ import Item from 'antd/lib/list/Item';
 export default function Projets() {
 
     const { Meta } = Card;
-    const miniaturesVideos = projectsData.map((item, index) => 
+    const miniaturesVideos = projectsData.slice(0, 3).map((item, index) => 
         <Popover key={index} content={item.nom}>
-            <Avatar style={{margin:4}}shape="square" size={55} src={item.miniature} />
+            <Avatar style={{margin:5}} shape="square" size={55} src={item.miniature} />
         </Popover>
         )
     return (
         <>
         {miniaturesVideos}
-        <Link to="/portfolio">Voir mes projets</Link>
+        <Link to="/portfolio"><Avatar style={{margin:5}} shape="square" size={55}>Voir plus !</Avatar></Link>
+        
         </>
     )
 }

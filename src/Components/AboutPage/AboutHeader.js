@@ -9,8 +9,12 @@ import profilePic from '../../img/PhotoCV.jpg';
 
 const {Title, Paragraph } = Typography;
 
-export default function AboutHeader() {
+export default function AboutHeader(load) {
     const [mounted, setmounted] = useState(false)
+
+    useEffect(() => {
+        setmounted(true)
+    })
 
     const transitions = useTransition(mounted, null, {
         from: { opacity: 0 },
@@ -18,9 +22,7 @@ export default function AboutHeader() {
         leave: { opacity: 0 },
     }) 
 
-    useEffect(() => {
-        setmounted(true)
-    })
+    
 
     const HeaderStyle = { 
         background:"#4681A6", 
@@ -47,6 +49,7 @@ export default function AboutHeader() {
                     <Title style={{color:'white',fontSize:15}}>
                         Médias   -   Vidéo   -   Communication   -   E-Commerce
                     </Title>
+                    {load.loading ? <Icon style={{color:'white'}}type="loading" /> : null}
                 </Col >
             </Row>
             </animated.div> 

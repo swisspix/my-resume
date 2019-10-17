@@ -39,7 +39,7 @@ class AboutContainer extends Component {
                 gridRef={grid => this.grid = grid}
                 gutterWidth={2}
                 gutterheight={2}
-                appearDelay={200}
+                appearDelay={180}
             >
                     <AnimatedBox
                         title='Quelques mots'
