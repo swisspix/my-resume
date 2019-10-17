@@ -9,14 +9,16 @@ import Routes from './Routes'
 import './App.css';
 
 export default function App() {
-  const {Footer } = Layout;
+  const { Footer, Content } = Layout;
 
   return (
       <HashRouter basename="/">
-        <ZIndex index={4}>
-          <Routes/>
-        </ZIndex>
-        <Footer style={{position:'fixed', textAlign: 'center' }}>CV portfolio Antoine Lot ©2019</Footer>
+        <Layout>
+          <Content>
+            <Routes/>
+          </Content>
+          <Footer style={{ textAlign: 'center' }}>CV portfolio Antoine Lot ©2019</Footer>
+        </Layout >
       </HashRouter>
   )
 }

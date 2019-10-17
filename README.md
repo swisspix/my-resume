@@ -1,5 +1,7 @@
-# Use antd in create-react-app ✨
+# CV/Portfolio by Antoine Lot 
 
-Bienvenue dans mon CV/Portfolio !
 
-Vous y trouverez ici l'ensemble de mes experiences, compétences et projet réalisés jusqu'a maintenant ! 
+
+
+
+

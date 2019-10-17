@@ -37,11 +37,9 @@ class AboutContainer extends Component {
             <StackGrid
                 columnWidth={width <= 768 ? '100%' : 400}
                 gridRef={grid => this.grid = grid}
-                style={{marginTop : 10}}
                 gutterWidth={2}
                 gutterheight={2}
-                appearDelay={0}
-                duration={0}
+                appearDelay={200}
             >
                     <AnimatedBox
                         title='Quelques mots'

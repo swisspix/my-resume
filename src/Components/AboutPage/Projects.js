@@ -12,8 +12,8 @@ import Item from 'antd/lib/list/Item';
 export default function Projets() {
 
     const { Meta } = Card;
-    const miniaturesVideos = projectsData.map(item=> 
-        <Popover content={item.nom}>
+    const miniaturesVideos = projectsData.map((item, index) => 
+        <Popover key={index} content={item.nom}>
             <Avatar style={{margin:4}}shape="square" size={55} src={item.miniature} />
         </Popover>
         )

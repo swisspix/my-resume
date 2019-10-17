@@ -18,12 +18,10 @@ export default function Routes() {
     })
     return (
         <>
-        <animated.div >
-            <Switch>
-                <Route exact path="/" component={AboutPage} />
-                <Route exact path="/portfolio" component={PortfolioPage} />
-            </Switch>
-        </animated.div>
+        <Switch>
+            <Route exact path="/" component={AboutPage} />
+            <Route exact path="/portfolio" component={PortfolioPage} />
+        </Switch>
         </>
         
     )

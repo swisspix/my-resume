@@ -11,12 +11,12 @@ import AbsoluteWrapper from '../../Components/Box/AbsoluteWrapper'
 
 export default function PortfolioPage() {
     return (
-            <Parallax
-                bgImage={BackgroundImg}
-                bgImageAlt="the cat"
-                strength={100}
-                appearDelay={100}>
-                    <PortfolioContainer/>
-            </Parallax>
+        <div style={{
+                backgroundImage: 'url(' + BackgroundImg + ')', 
+                minHeight:1000,
+                padding:'1.2em'
+                }}>
+            <PortfolioContainer/>
+        </div> 
     )
 }

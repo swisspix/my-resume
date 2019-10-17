@@ -38,22 +38,22 @@ class PortfolioContainer extends Component {
 
         return (
             <>
+            
             <StackGrid
                 monitorImagesLoaded={false}
                 columnWidth={width <= 768 ? '100%' : 300}
                 gridRef={grid => this.grid = grid}
                 style={{
-                    marginTop:10,
                     marginLeft:'auto', 
                     marginRight:'auto', 
-                    maxWidth:1500,
+                    maxWidth:1600,
                     }}
                 gutterWidth={10}
                 gutterheight={5}
                 appearDelay={100}
                 >
             <Link to="/">
-                <Button type>
+                <Button style={{marginLeft:'50'}}>
                     <Icon type="left" />
                     Retour au profil
                 </Button>
