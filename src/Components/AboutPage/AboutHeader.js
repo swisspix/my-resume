@@ -27,11 +27,13 @@ export default function AboutHeader(load) {
     const HeaderStyle = { 
         background:"#4681A6", 
         boxShadow: '4px 4px 4px rgba(0,0,0,0.25)',
-        marginLeft:20,
-        marginRight:20,
-        padding:'1.2em'
+        marginLeft:10,
+        marginRight:10,
+        padding:'1.2em',
+        color:'white'
         }
         
+        const TypeWelcome = <ReactRotatingText pause={15000} items={['Bienvenue !', 'Bonne visite à vous :)']} />
             
         
     return (
@@ -39,17 +41,20 @@ export default function AboutHeader(load) {
             {transitions.map(({ item, key, props }) =>
             <animated.div key={key} style={props}>
             <Row >
-                <Col sm={12} md={4}>
-                <Avatar  size={150} src={profilePic} />
+                <Col sm={6} md={4}>
+                <Avatar  size={130} src={profilePic} />
                 </Col>
-                <Col sm={12} md={8}>
-                    <Title style={{color:'white',fontSize:50}}>
+                <Col sm={18} md={8}>
+                    <Title style={{color:'white',fontSize:40}}>
                         Antoine Lot
                     </Title>
                     <Title style={{color:'white',fontSize:15}}>
-                        Médias   -   Vidéo   -   Communication   -   E-Commerce
+                        Médias   -   Vidéo   -   Communication   -   Ecommerce
+                        <br/>
+                        <br/>
+                        
                     </Title>
-                    {load.loading ? <Icon style={{color:'white'}}type="loading" /> : null}
+                    {load.loading ? <Icon style={{color:'white'}} type="loading" /> : TypeWelcome}
                 </Col >
             </Row>
             </animated.div> 
