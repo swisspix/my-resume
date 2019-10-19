@@ -27,11 +27,10 @@ function AnimatedBox(props) {
     })
 
     const rotate = useSpring({degree: hovered ? 10 : 30})
-
     
-    const icon = <AnimatedIcon onClick={toggleExpanded} size={rotate.degree} type={props.icon} theme="filled" style={{fontSize:20}}/>
+    const icon = <Icon size={rotate.degree} type={props.icon} theme="filled" style={{fontSize:20}}/>
 
-    const title = <Title level={4}>{props.title}</Title>
+    const title = props.title
 
     return (
         <animated.div   
@@ -40,7 +39,7 @@ function AnimatedBox(props) {
             style={divStyle} 
             config={config.default}
             >
-            <Card title={title} extra={icon}>
+            <Card bordered={false} title={title}>
                 {props.content}
             </Card>
         </animated.div>

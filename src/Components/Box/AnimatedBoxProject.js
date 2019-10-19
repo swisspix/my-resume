@@ -16,8 +16,6 @@ function AnimatedBox(props) {
         margin :10,
         overflow:'hidden',
         height: 'auto',
-        // marginTop : appeared ? 0 : 0,
-        // opacity: appeared ? 1 : 0,
         transform: hovered ? 'scale(1.02)' : 'scale(1)',
         boxShadow: hovered ? "0 4px 4px 0px #1c1b24" : "0 0px 0px 0px #1c1b24",
     })

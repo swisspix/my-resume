@@ -40,7 +40,7 @@ export default function AboutHeader(load) {
         <div style ={HeaderStyle}>
             {transitions.map(({ item, key, props }) =>
             <animated.div key={key} style={props}>
-            <Row >
+            <Row>
                 <Col sm={6} md={4}>
                 <Avatar  size={130} src={profilePic} />
                 </Col>
