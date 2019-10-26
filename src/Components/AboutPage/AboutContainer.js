@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import AnimatedBox from '../Box/AnimatedBox'
 
-import {Button} from 'antd'
+import {Typography} from 'antd'
 
 import Experiences from './Experiences'
 import Formations from './Formations'
@@ -40,11 +40,11 @@ class AboutContainer extends Component {
 
     render() {
     const { size: {width}} = this.props;
+    const {Title} = Typography
     const showProjets = this.props.showProject
 
-        return (
-            <>
-            <StackGrid
+        return (<>
+                <StackGrid
                 columnWidth={width <= 768 ? '100%' : 400}
                 gridRef={grid => this.grid = grid}
                 gutterWidth={2}
@@ -77,16 +77,16 @@ class AboutContainer extends Component {
                     icon={"zhihu-circle"}
                     content={<Langues/>}
                 />
-                <AnimatedBox
+                {/* <AnimatedBox
                     title='Me contacter'
                     icon={"mail"}
                     content={<Contact/>}
-                />
-                <AnimatedBox
+                /> */}
+                {/* <AnimatedBox
                     title='Mes projets'
                     icon={"folder-open"}
                     content={<Projets reloadlayout={()=> this.reloadWithdelay()}/>}
-                />
+                /> */}
             </StackGrid>
             </>
         )

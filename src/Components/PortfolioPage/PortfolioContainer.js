@@ -12,7 +12,7 @@ class PortfolioContainer extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.grid.updateLayout();
-        }, 500);
+        }, 1000);
     }
     
     render() {
@@ -28,6 +28,7 @@ class PortfolioContainer extends Component {
         )
 
         return (
+            <>
             <StackGrid
                 monitorImagesLoaded={false}
                 columnWidth={width <= 768 ? '100%' : 270}
@@ -39,6 +40,7 @@ class PortfolioContainer extends Component {
                 >
                 {videoProjects}
             </StackGrid>
+            </>
         )
     }
     
