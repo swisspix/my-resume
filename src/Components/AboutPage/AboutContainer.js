@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import AnimatedBox from '../Box/AnimatedBox'
 
+import {Button} from 'antd'
+
 import Experiences from './Experiences'
 import Formations from './Formations'
 import Langues from './Langues';
@@ -19,13 +21,14 @@ class AboutContainer extends Component {
     constructor() {
         super()
         this.state = {
+            mounted:false,
             showProjets:false
         }
     }
-
     componentDidMount() {
         setTimeout(() => {
             this.grid.updateLayout();
+            this.setState({mounted:true})
         }, 200);
     }
 
@@ -35,13 +38,9 @@ class AboutContainer extends Component {
         }, 200);
     }
 
-    toggleShowProject() {
-
-    }
-
     render() {
     const { size: {width}} = this.props;
-    const showProjets = this.state.showProjets
+    const showProjets = this.props.showProject
 
     const videoProjects = ProjectData.map(item => 
         <div>
@@ -88,7 +87,6 @@ class AboutContainer extends Component {
                     icon={"zhihu-circle"}
                     content={<Langues/>}
                 />
-                
                 <AnimatedBox
                     title='Me contacter'
                     icon={"mail"}
@@ -97,12 +95,10 @@ class AboutContainer extends Component {
                 <AnimatedBox
                     title='Mes projets'
                     icon={"folder-open"}
-                    content={<Projets/>}
+                    content={<Projets reloadlayout={()=> this.reloadWithdelay()}/>}
                 />
                     {showProjets ? videoProjects: null}
             </StackGrid>
-        
-                
             </>
         )
     }

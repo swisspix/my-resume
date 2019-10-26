@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {useSpring, animated, config} from 'react-spring'
-import { Typography,Button,Card,Icon, Modal, Popover } from 'antd';
+import { Typography,Button,Card,Icon, Modal, Divider  } from 'antd';
 import { useMeasure} from '../../utils/helpers';
 import ReactPlayer from 'react-player'
 
 
 function AnimatedBox(props) {
-    const { Title } = Typography;
+    const { Title, Text, Paragraph } = Typography;
     const { Meta } = Card;
     const[hovered, setHovered] = useState(false)
     const[modalOpen, setmodalOpen]= useState(false)
@@ -20,11 +20,6 @@ function AnimatedBox(props) {
         boxShadow: hovered ? "0 4px 4px 0px #1c1b24" : "0 0px 0px 0px #1c1b24",
     })
 
-    const rotate = useSpring({degree: hovered ? 10 : 30})
-
-    
-    const icon = <Icon size={rotate.degree} type={props.icon} theme="filled" style={{fontSize:20}}/>
-
     const title = <Title level={4}>{props.title}</Title>
 
     return (
@@ -34,35 +29,25 @@ function AnimatedBox(props) {
             style={divStyle} 
             config={config.default}
             >
-            <Card 
-                size="small" 
-                bordered={false}
-                cover={
-                    <img
-                      alt="example"
-                      src={props.img}
-                />}
-                actions={[
-                    <a onClick={()=> setmodalOpen(true)} type="play-circle">Voir</a>
-                    
-                  ]}
-                >
+            <a onClick={()=> setmodalOpen(true)}>
+                <img style={{width :'100%', height:'100%'}}  src={props.img}/>
+            </a>
+            
                 <Modal
                     visible={modalOpen}
                     onOk={()=> setmodalOpen(false)}
                     onCancel={()=> setmodalOpen(false)}
                     footer={null}
+                    style={{ top: 20 }}
                     width={680}
                     closable={false}
                     forceRender={true}
                     >
-                <ReactPlayer centered={true} playing={modalOpen} width='100%' url={props.url} />
+                    <Title>{props.title}</Title>
+                    <Paragraph>{props.description}</Paragraph>
+                    <Divider/>
+                <ReactPlayer style={{width:'100%', height:'100%'}} url={props.url} />
                 </Modal>
-                <Meta
-                    title={props.title}
-                    description={props.description}
-                />
-            </Card>
         </animated.div>
     )
 }

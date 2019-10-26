@@ -4,6 +4,7 @@ import { Parallax} from 'react-parallax';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import PortfolioHeader from '../../Components/PortfolioPage/PortfolioHeader';
 import PortfolioContainer from '../../Components/PortfolioPage/PortfolioContainer';
+import {useSpring, animated} from 'react-spring'
 
 import BackgroundImg from '../../img/zach2.jpg'
 
@@ -23,13 +24,12 @@ export default function PortfolioPage() {
 
     return (
         <div style={{
-                backgroundImage: 'url(' + BackgroundImg + ')', 
+                backgroundColor:'#46AEBD', 
                 minHeight:1000,
                 padding:'1.2em'
                 }}>
             <PortfolioHeader loading={loading}/>
             {mountPortfolioContainer ? <PortfolioContainer loading={loading}/> : null}
-            
         </div> 
     )
 }

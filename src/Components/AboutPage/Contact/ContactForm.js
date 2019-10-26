@@ -87,13 +87,13 @@ export default function ContactFrom() {
                                 onBlur={handleBlur} />
                         </Form.Item >
                         <Form.Item 
-                            help={touched.email && errors.message ? errors.message : "(Max 500 char)"}>
+                            help={touched.email && errors.message ? errors.message : ""}>
                             <Input.TextArea 
                                 prefix={<Icon type="form" style={{ color: 'rgba(0,0,0,.25)' }} />}
                                 name="message" 
                                 placeholder="Votre message ici "
                                 onBlur={handleBlur}
-                                autosize={{ minRows: 3, maxRows: 6 }} />
+                                autosize={{ minRows: 3, maxRows: 3 }} />
                         </Form.Item>
                         <Form.Item>
                             <SubmitButton icon="mail">Envoyer</SubmitButton>

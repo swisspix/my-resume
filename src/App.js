@@ -17,7 +17,7 @@ export default function App() {
       <HashRouter basename="/" onUpdate={() => window.scrollTo(0, 0)}>
         <ScrollToTop>
         <Layout>
-          <Content>
+          <Content style={{minHeight:500}}>
             <Routes/>
           </Content>
           <Footer style={{ textAlign: 'center' }}>CV portfolio Antoine Lot ©2019</Footer>

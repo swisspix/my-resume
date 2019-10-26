@@ -9,8 +9,6 @@ import ProjectData from '../../data/ProjectsData'
 import { Link } from "react-router-dom";
 
 class PortfolioContainer extends Component {
-    
-
     componentDidMount() {
         setTimeout(() => {
             this.grid.updateLayout();
@@ -21,14 +19,12 @@ class PortfolioContainer extends Component {
         const {size: {width}} = this.props;
 
         const videoProjects = ProjectData.map(item => 
-        <div>
             <AnimatedBoxProject
                 url={item.url}
                 title={item.nom}
                 description={item.description}
                 annee={item.annee}
                 img={item.miniature}/>
-        </div>
         )
 
         return (

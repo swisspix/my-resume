@@ -9,7 +9,6 @@ export default function PortfolioHeader(props) {
             <Link to="/">
                 <Button  icon="left" loading={props.loading} style={{marginLeft:'50'}}>
                     {props.loading ? '' : 'Retour au profil'}
-                        
                 </Button>
             </Link>
         </div>
