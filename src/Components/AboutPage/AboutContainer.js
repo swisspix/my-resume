@@ -7,7 +7,7 @@ import Experiences from './Experiences'
 import Formations from './Formations'
 import Langues from './Langues';
 import Competences from './Competences'
-import Contact from './Contact/Contact'
+import Contact from './Contact'
 import Projets from './Projects'
 import Apropos from './Apropos'
 
@@ -41,16 +41,6 @@ class AboutContainer extends Component {
     render() {
     const { size: {width}} = this.props;
     const showProjets = this.props.showProject
-
-    const videoProjects = ProjectData.map(item => 
-        <div>
-            <AnimatedBoxProject
-                url={item.url}
-                title={item.nom}
-                description={item.description}
-                annee={item.annee}
-                img={item.miniature}/>
-        </div>)
 
         return (
             <>
@@ -97,7 +87,6 @@ class AboutContainer extends Component {
                     icon={"folder-open"}
                     content={<Projets reloadlayout={()=> this.reloadWithdelay()}/>}
                 />
-                    {showProjets ? videoProjects: null}
             </StackGrid>
             </>
         )

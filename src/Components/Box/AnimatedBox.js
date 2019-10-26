@@ -39,7 +39,7 @@ function AnimatedBox(props) {
             style={divStyle} 
             config={config.default}
             >
-            <Card bordered={false} title={title}>
+            <Card title={title}>
                 {props.content}
             </Card>
         </animated.div>

@@ -117,7 +117,7 @@ export const CompPanelData = [
     id:0,
     header:'Web',
     icon:<Icon type="chrome" />,
-    text:`J'ai su, au cours de mes études, parcourir un grand nombre d'outils nécessaires au développement d'applications Web sur le plan backend comme frontend.`,
+    text:<p>J'ai su, au cours de mes études, parcourir un grand nombre d'outils nécessaires au développement d'applications Web sur le plan backend comme frontend.</p>,
     listAvatars:webavatars
   },
   {
