@@ -97,18 +97,18 @@ const CDLogos = [
 ]
 
 const webavatars = WebLogos.map(item =>
-  <Tooltip title={item.nom}>
-    <Avatar key={item.id} shape="square" src={item.src} />
+  <Tooltip key={item.id} title={item.nom}>
+    <Avatar shape="square" src={item.src} />
   </Tooltip>
 )
 const videoavatars = VideoLogos.map(item =>
-  <Tooltip title={item.nom}>
-    <Avatar key={item.id} shape="square" src={item.src} />
+  <Tooltip key={item.id} title={item.nom}>
+    <Avatar shape="square" src={item.src} />
   </Tooltip>
 )
 const cdavatars = CDLogos.map(item =>
-  <Tooltip title={item.nom}>
-    <Avatar key={item.id} shape="square" src={item.src} />
+  <Tooltip key={item.id} title={item.nom}>
+    <Avatar shape="square" src={item.src} />
   </Tooltip>
 )
 
@@ -117,7 +117,7 @@ export const CompPanelData = [
     id:0,
     header:'Web',
     icon:<Icon type="chrome" />,
-    text:<p>J'ai su, au cours de mes études, parcourir un grand nombre d'outils nécessaires au développement d'applications Web sur le plan backend comme frontend.</p>,
+    text:`J'ai su, au cours de mes études, parcourir un grand nombre d'outils nécessaires au développement d'applications Web sur le plan backend comme frontend.`,
     listAvatars:webavatars
   },
   {

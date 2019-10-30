@@ -3,26 +3,36 @@ import {HashRouter, BrowserRouter as Router} from 'react-router-dom'
 import { Layout } from 'antd';
 import  ZIndex  from 'react-z-index'
 import { useTransition, animated } from 'react-spring'
-import Header from './Components/AboutPage/AboutHeader'
 import Routes from './Routes'
 import ScrollToTop from 'react-router-scroll-top'
+import AboutPage from './Pages/About'
+
+import {LoadedProvider} from './Providers/LoadedContext'
+import { useMediaPredicate } from "react-media-hook";
 
 
 import './App.css';
 
 export default function App() {
   const { Footer, Content } = Layout;
+  const desktop = useMediaPredicate("(min-width: 1280px)");
+
+  const contentStyle = {
+    minHeight:500, 
+    maxWidth:desktop ? 1200 : null, 
+    width:desktop ? 1200 : 'auto',
+    marginLeft:desktop ? 'auto' : null, 
+    marginRight:desktop ? 'auto' : null,
+  }
 
   return (
-      <HashRouter basename="/" onUpdate={() => window.scrollTo(0, 0)}>
-        <ScrollToTop>
         <Layout>
-          <Content style={{minHeight:500}}>
-            <Routes/>
+          <div style={contentStyle}>
+          <Content >
+            <AboutPage/>
           </Content>
+          </div>
           <Footer style={{ textAlign: 'center' }}>CV portfolio Antoine Lot ©2019</Footer>
-        </Layout >
-        </ScrollToTop>
-      </HashRouter>
+        </Layout>
   )
 }

@@ -20,9 +20,7 @@ export default function AboutHeader(load) {
         from: { opacity: 0 },
         enter: { opacity: 1 },
         leave: { opacity: 0 },
-    }) 
-
-    
+    })
 
     const HeaderStyle = { 
         background:"#4681A6", 
@@ -45,15 +43,10 @@ export default function AboutHeader(load) {
                 <Avatar  size={130} src={profilePic} />
                 </Col>
                 <Col sm={18} md={8}>
-                    <Title style={{color:'white',fontSize:40}}>
+                    <Title style={{color: 'white', fontSize:35}}>
                         Antoine Lot
                     </Title>
-                    <Title style={{color:'white',fontSize:15}}>
-                        Médias   -   Vidéo   -   Communication   -   Ecommerce
-                        <br/>
-                        <br/>
-                        
-                    </Title>
+                    <Title style={{color: 'white',fontSize:15}}>Médias -   Vidéo   -   Communication   -   Ecommerce</Title>
                     {load.loading ? <Icon style={{color:'white'}} type="loading" /> : TypeWelcome}
                 </Col >
             </Row>

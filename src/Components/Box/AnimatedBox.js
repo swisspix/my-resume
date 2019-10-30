@@ -16,7 +16,6 @@ function AnimatedBox(props) {
     
     const divStyle = useSpring({
         zIndex:1,
-        margin :10,
         overflow:'hidden',
         height: 'auto',
         // marginTop : appeared ? 0 : 0,

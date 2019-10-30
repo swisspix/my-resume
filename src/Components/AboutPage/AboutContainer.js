@@ -14,43 +14,35 @@ import Apropos from './Apropos'
 import StackGrid from "react-stack-grid";
 import sizeMe from 'react-sizeme';
 
-import ProjectData from '../../data/ProjectsData'
-import AnimatedBoxProject from '../Box/AnimatedBoxProject'
+import AboutImage from '../../img/fintan.jpg'
 
 class AboutContainer extends Component {
-    constructor() {
-        super()
-        this.state = {
-            mounted:false,
-            showProjets:false
-        }
-    }
+
     componentDidMount() {
         setTimeout(() => {
-            this.grid.updateLayout();
             this.setState({mounted:true})
+            console.log(this.grid)
         }, 200);
     }
 
     reloadWithdelay() {
         setTimeout(() => {
             this.grid.updateLayout();
-        }, 200);
+        }, 250);
     }
 
     render() {
     const { size: {width}} = this.props;
-    const {Title} = Typography
     const showProjets = this.props.showProject
 
-        return (<>
+        return (<div style={{marginTop: 10}}>
                 <StackGrid
-                columnWidth={width <= 768 ? '100%' : 400}
-                gridRef={grid => this.grid = grid}
-                gutterWidth={2}
-                gutterheight={2}
-                appearDelay={180}
-            >
+                    columnWidth={width <= 768 ? '100%' : 330}
+                    gridRef={el => this.grid = el}
+                    gutterWidth={15}
+                    gutterHeight={15}
+                    appearDelay={180}
+                >
                 <AnimatedBox
                     title='Quelques mots'
                     icon={"edit"}
@@ -66,7 +58,6 @@ class AboutContainer extends Component {
                     icon={"profile"}
                     content={<Experiences/>}
                     />
-                
                 <AnimatedBox
                     title='Mes formations'
                     icon={"edit"}
@@ -88,7 +79,7 @@ class AboutContainer extends Component {
                     content={<Projets reloadlayout={()=> this.reloadWithdelay()}/>}
                 /> */}
             </StackGrid>
-            </>
+            </div>
         )
     }
 }

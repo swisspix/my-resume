@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Timeline, Modal, Popover } from 'antd';
+import { Timeline, Modal} from 'antd';
 
 import ExperiencesData from '../../data/experiencesData'
 
