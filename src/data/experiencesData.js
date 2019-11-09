@@ -31,7 +31,7 @@ const ExperiencesData = [
     {
         id: 2,
         lieu:'Cully Jazz Festival',
-        poste: 'Stage en administration et communication',
+        poste: 'Stagiaire administration et communication',
         description:"Réalisation du dossier de presse, aide à la vente des billets, soutien à la communication",
         dateDebut:'Nov. 2018',
         dateFin:'Jan. 2019',

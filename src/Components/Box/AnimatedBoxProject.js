@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {useSpring, animated, config} from 'react-spring'
 import { Typography,Button,Card,Icon, Modal, Divider} from 'antd';
 import { useMeasure} from '../../utils/helpers';
@@ -10,6 +10,11 @@ function AnimatedBox(props) {
     const { Meta } = Card;
     const[hovered, setHovered] = useState(false)
     const[modalOpen, setmodalOpen]= useState(false)
+    const[playVideo, setPlayVideo] = useState(false)
+
+    useEffect(() => {
+        console.log(modalOpen && playVideo)
+    })
     
     const divStyle = useSpring({
         zIndex:1,
@@ -51,16 +56,16 @@ function AnimatedBox(props) {
                     style={{ top: 20 }}
                     width={680}
                     closable={true}
+                    destroyOnClose={true}
                     forceRender={true}
+                    
                     >
                     <Title>{props.title}</Title>
                     <Paragraph>{props.description}</Paragraph>
                     <Divider/>
                     
-                <ReactPlayer 
-                    playing={modalOpen} 
-                    style={{width:'100%', height:'100%'}} 
-                    url={props.url} />
+                    <ReactPlayer
+                        url={props.url} />
                 </Modal>
         </div>
     )

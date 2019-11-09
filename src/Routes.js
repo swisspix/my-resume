@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 
 import {Switch, Route, __RouterContext} from 'react-router-dom'
-import AboutPage from './Pages/About'
+import AboutPage from './Components/AboutPage'
 import PortfolioPage from './Pages/Portfolio'
 
 import {animated, useTransition} from 'react-spring'

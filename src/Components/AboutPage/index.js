@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
-import AboutContainer from '../../Components/AboutPage/AboutContainer'
-import Header from '../../Components/AboutPage/AboutHeader';
-import PortfolioContainer from '../../Components/PortfolioPage/PortfolioContainer'
-import Contact from '../../Components/AboutPage/Contact'
+import AboutContainer from './AboutContainer'
+import Header from './AboutHeader';
+import PortfolioContainer from '../PortfolioPage/PortfolioContainer'
+import Contact from './Contact'
 
 import BackgroundImgAbout from '../../img/fintan.jpg'
 import BackgroundImgPortfolio from '../../img/background-white.jpg'
@@ -25,6 +25,7 @@ function AboutPage() {
     const {Link} = Anchor
     const props = useSpring({
         opacity : mountContent ? 1 : 0,
+        marginTop : mountContent ? 0 : 10,
         paddingLeft:'2em',
         paddingRight:'2em',
         maxWidth : 1400,
@@ -38,35 +39,37 @@ function AboutPage() {
         const timer = setTimeout(() => {
             setMountContent(true);
             setloading(false);
-        }, 1300);
+        }, 2000);
         return () => clearTimeout(timer);
       }, []);
 
     return (
         <>
+        <a id="acceuil"></a>
             <Header loading={loading}/>
             <animated.div style={props}>
                 <Row>
                     <Col span={22} >
-                        <a id="acceuil"></a>
                         <AboutContainer mounted={() => setAboutMounted(true)} />
-                    <Divider/>
+                    <br/>
                         <a id="portfolio"></a>
-                        <Title>Portfolio</Title>
+                            <Title style={{textAlign: 'center'}}>Portfolio</Title>
+                        <br/>
                         <PortfolioContainer mounted={() => setPortolioMounted(true)}/>
-                    <Divider/>
+                    <br/>
                         <a id="contact"></a>
-                        <Title>Contact</Title>
+                        <Title style={{textAlign: 'center'}}>Contact</Title>
+                        <br/>
                         <Card style={{margin:'auto', maxWidth:500}}>
                             <Contact/>
                         </Card>
                     </Col>
                     <Col span={2} >
-                    <Anchor style={{paddingLeft:20, backgroundColor:'rgba(225,225,225,0)'}}>
+                    <Anchor offsetTop={20} style={{paddingLeft:20, backgroundColor:'rgba(225,225,225,0)'}}>
                         <br/>
-                            <Link href="#acceuil" title="Acceuil"/>
-                            <Link href="#portfolio" title="Portfolio"/>
-                            <Link href="#contact" title="Contact"/>
+                        <Link href="#acceuil" title="Acceuil"/>
+                        <Link href="#portfolio" title="Portfolio"/>
+                        <Link href="#contact" title="Contact"/>
                     </Anchor>
                     </Col>
                 </Row>

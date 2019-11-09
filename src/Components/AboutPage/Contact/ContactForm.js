@@ -11,13 +11,13 @@ const validationSchema = Yup.object().shape({
     .max(255, "Doit être plus court que 255 caractères.")
     .required("Et votre nom ?"),
     email : Yup.string()
-    .email("Votre adresse email doit être valide.")
+    .email("Votre adresse email n'est pas valide :(")
     .max(255, "Votre adresse email doit être plus courte que 255.")
-    .required("Votre adresse email pour vous repondre ?"),
+    .required("N'oubliez pas de saisir le mail !"),
     subject : Yup.string()
     .max(255, "Le sujet doit faire max. 255 char."),
     message : Yup.string()
-    .max(500, "max. 500 charactères pour les message")
+    .max(500, "max. 500 charactères pour les messages")
     .required("Je vous ecoute !")
 })
 

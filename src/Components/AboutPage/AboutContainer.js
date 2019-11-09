@@ -37,7 +37,7 @@ class AboutContainer extends Component {
 
         return (<div style={{marginTop: 10}}>
                 <StackGrid
-                    columnWidth={width <= 768 ? '100%' : 330}
+                    columnWidth={width <= 768 ? '100%' : 350}
                     gridRef={el => this.grid = el}
                     gutterWidth={15}
                     gutterHeight={15}
@@ -49,22 +49,22 @@ class AboutContainer extends Component {
                     content={<Apropos/>}
                     />
                 <AnimatedBox
-                    title='Mes competences'
+                    title='Compétences'
                     icon={"tool"}
                     content={<Competences reload={()=> this.reloadWithdelay()}/>}
                 />
                 <AnimatedBox
-                    title='Mes experiences'
+                    title='Experiences'
                     icon={"profile"}
                     content={<Experiences/>}
                     />
                 <AnimatedBox
-                    title='Mes formations'
+                    title='Formations'
                     icon={"edit"}
                     content={<Formations/>}
                 />
                 <AnimatedBox
-                    title='Mes langues'
+                    title='Langues'
                     icon={"zhihu-circle"}
                     content={<Langues/>}
                 />

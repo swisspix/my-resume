@@ -12,6 +12,7 @@ class PortfolioContainer extends Component{
         setTimeout(() => {
             this.setState({mounted:true})
             console.log(this.grid)
+            this.grid.updateLayout();
         }, 200);
     }
 

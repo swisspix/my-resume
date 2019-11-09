@@ -5,22 +5,25 @@ const { Title, Paragraph, Text } = Typography;
 export default function Apropos() {
     return (
         <>
-        <Paragraph>
-            Passionné des nouvelles technologies, du <Text strong>monde de la communication</Text>, des <Text strong>arts modernes</Text> et de la <Text strong>vidéo</Text>, j’ai su au cours de mon parcours accumuler des expériences qui sauront aller dans le sens de mes atouts et mes compétences.        
-        </Paragraph>
-        <Paragraph>
-            Voilà maintenant 10 ans que j’ai atterris en Suisse au Gymnase de Burier et que j’ai su m’orienter vers ce qui me fait aujourd’hui le plus vibrer : le monde du numérique ! Ce que vous trouverez dans ce CV/Portfolio retrace l’ensemble de mes expériences passées et les outils que j’ai pu utiliser au cours de celles-ci.        
-        </Paragraph>
-        <Paragraph>
-            J'ai pu travailler avec plusieurs entreprises variée comme <a target="_blank" rel="noopener noreferrer" href="https://images3.ch/">Images3</a>, 
-            le <a target="_blank" rel="noopener noreferrer" href="https://cullyjazz.ch/fr">Cully Jazz Festival</a>, 
-            <a href="https://www.bemyangel.ch/"> la FVA</a> et tout un magasin de vente d'articles de vente en ligne 
-            <a href="https://www.sports-discount.net/fr/"> Sports Discount</a>. 
-        </Paragraph>
-        <Paragraph>
-            Bonne visite ! 
-        </Paragraph>
-        <Text mark>Antoine Lot</Text>
+            <Paragraph>
+                <i>Bonjour et bienvenue !</i>
+            </Paragraph>
+            <Paragraph>
+                Je m’appelle Antoine Lot j’ai 25 ans et j’ai été diplômé en 2018 comme <b>ingénieur des médias</b> à <b>la HEIG-VD</b> d’Yverdon en Suisse. 
+                Passionné par les <b>nouvelles technologies</b>, <b>le monde du design</b> et la <b>culture web</b>, me voila maintenant à me présenter à vous sur la toile 
+            </Paragraph>
+            <Paragraph>
+                Passionné par le monde de la <b>communication</b>, la <b>vidéo</b>, et plus récemment par le <b>développement web</b>, me voilà aujourd’hui en quête de nouvelles expériences qui puissent enrichir mes compétences dans le domaine du digital. 
+                Vous trouverez ici un résumé de mon parcours professionnel ainsi qu’une sélection des projets vidéo dont j’ai été responsable ces 5 dernières années.
+            </Paragraph>
+            <Paragraph>
+            Faire vivre mes idées, être curieux les mettre en pratique à travers des opportunités professionnelles 
+            constituent aujourd’hui un moteur pour me développer autant humainement que professionnellement.
+            </Paragraph>
+            <Paragraph>
+                Bonne visite ! 
+            </Paragraph>
+            <Text mark>Antoine Lot</Text>
         </>
     )
 }

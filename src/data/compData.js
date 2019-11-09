@@ -1,4 +1,5 @@
 import React from 'react'
+import {Anchor} from 'antd'
 
 import CSSLogo from '../img/logos/css.png'
 import HTMLLogo from '../img/logos/html.png'
@@ -17,7 +18,14 @@ import IDLogo from '../img/logos/indesign.png'
 import PPTLogo from '../img/logos/ppt.png'
 import XLSLogo from '../img/logos/xls.png'
 
+import Prestashop from '../img/logos/prestashop.png'
+import Channable from '../img/logos/channable.jpg'
+import Beezup from '../img/logos/beezup.png'
+
+
+
 import {Icon, Avatar, Tooltip   } from 'antd';
+const {Link} = Anchor
 
 const WebLogos = [
     {
@@ -95,20 +103,47 @@ const CDLogos = [
       nom:'Microsoft PowerPoint'
     },
 ]
+const ECLogos = [
+  {
+    id:0,
+    src:Prestashop,
+    nom:'Prestashop'
+  },
+  {
+    id:1,
+    src:Wordpress,
+    nom:'Wordpress'
+  },
+  {
+    id:2,
+    src:Beezup,
+    nom:'Beezup'
+  },
+  {
+    id:3,
+    src:Channable,
+    nom:'Channable'
+  },
+]
 
 const webavatars = WebLogos.map(item =>
   <Tooltip key={item.id} title={item.nom}>
-    <Avatar shape="square" src={item.src} />
+    <Avatar shape="square" src={item.src} />{" "}
   </Tooltip>
 )
 const videoavatars = VideoLogos.map(item =>
   <Tooltip key={item.id} title={item.nom}>
-    <Avatar shape="square" src={item.src} />
+    <Avatar shape="square" src={item.src} />{" "}
   </Tooltip>
 )
 const cdavatars = CDLogos.map(item =>
   <Tooltip key={item.id} title={item.nom}>
-    <Avatar shape="square" src={item.src} />
+    <Avatar shape="square" src={item.src} />{" "}
+  </Tooltip>
+)
+const ecavatar = ECLogos.map(item =>
+  <Tooltip key={item.id} title={item.nom}>
+    <Avatar shape="square" src={item.src} />{" "}
   </Tooltip>
 )
 
@@ -117,19 +152,19 @@ export const CompPanelData = [
     id:0,
     header:'Web',
     icon:<Icon type="chrome" />,
-    text:`J'ai su, au cours de mes études, parcourir un grand nombre d'outils nécessaires au développement d'applications Web sur le plan backend comme frontend.`,
+    text:`Que ce soit dans le domaine du devellopement d'interfaces, de gestion de bases de données ou d'herbergement, je suis aujourd'hui à 2 ans d'experiences dans le domaines de la créatio et de la gestion web.`,
     listAvatars:webavatars
   },
   {
     id:1,
     header:"Video",
     icon:<Icon type="video-camera" />,
-    text:`La vidéo a toujours été une de mes plus grandes passions. Que ce soit derrière la caméra ,au montage ou sur un projet motion design, j'ai eu la chance d'appliquer mes compétences à plusieurs reprises durant ces dernières années.`,
+    text:`La vidéo a toujours été une de mes plus grandes passions. Que ce soit derrière la caméra, en post production ou sur un projet de motion design. ${<Link href="#acceuil" title="Acceuil"/>}`,
     listAvatars:videoavatars
   },
   {
     id:2,
-    header:"Création digitale",
+    header:"Communication",
     icon:<Icon type="picture" />,
     text:`Création et animation de logo, composition d'affiches, de pages web... Je me fais un plaisir de réfléchir à des solutions viables et esthétiques dans la création Web.`,
     listAvatars:cdavatars
@@ -139,6 +174,6 @@ export const CompPanelData = [
     header:"Gestion E-Commerce",
     icon:<Icon type="shop" />,
     text:`J'ai su développer des compétences dans la gestion de E-commerce d'un magasin en ligne. Du travail de gestion d'interface, d'indexation de produits et d'optimisation de l'UX ont été de mise. `,
-    listAvatars:cdavatars
+    listAvatars:ecavatar
   },
 ]

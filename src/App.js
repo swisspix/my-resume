@@ -5,7 +5,8 @@ import  ZIndex  from 'react-z-index'
 import { useTransition, animated } from 'react-spring'
 import Routes from './Routes'
 import ScrollToTop from 'react-router-scroll-top'
-import AboutPage from './Pages/About'
+
+import AboutPage from './Components/AboutPage'
 
 import {LoadedProvider} from './Providers/LoadedContext'
 import { useMediaPredicate } from "react-media-hook";
@@ -19,8 +20,8 @@ export default function App() {
 
   const contentStyle = {
     minHeight:500, 
-    maxWidth:desktop ? 1200 : null, 
-    width:desktop ? 1200 : 'auto',
+    maxWidth:desktop ? 1250 : null, 
+    width:desktop ? 1250 : 'auto',
     marginLeft:desktop ? 'auto' : null, 
     marginRight:desktop ? 'auto' : null,
   }
@@ -32,7 +33,7 @@ export default function App() {
             <AboutPage/>
           </Content>
           </div>
-          <Footer style={{ textAlign: 'center' }}>CV portfolio Antoine Lot ©2019</Footer>
+          <Footer style={{ textAlign: 'center' }}>CV portfolio Antoine Lot ©2019<br/>Projet disponible sur github : https://github.com/swisspix/my-resume</Footer>
         </Layout>
   )
 }

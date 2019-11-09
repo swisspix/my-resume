@@ -1,11 +1,19 @@
 import React from 'react'
 import "react-sweet-progress/lib/style.css";
-import {Typography, Collapse} from 'antd';
-import {CompPanelData} from '../../data/compData'
+import {Typography, Collapse, Icon} from 'antd';
+import {CompPanelData} from '../../data/compData';
+import {useSpring, animated} from 'react-spring'
 
 export default function Competences({reload}) {
   const { Panel } = Collapse;
   const { Text } = Typography;
+  const customPanelStyle = {
+    background: '#f7f7f7',
+    borderRadius: 4,
+    marginBottom: 5,
+    border: 0,
+    overflow: 'hidden',
+  };
 
   const compPanels = CompPanelData.map((panel) =>
     <Panel 
@@ -13,8 +21,9 @@ export default function Competences({reload}) {
       key={panel.id} 
       header={panel.header} 
       extra={panel.icon}
+      style={customPanelStyle}
       >
-        <p  style={{ paddingLeft: 24 }}>
+        <p >
           {panel.text}
           
           <br/>
@@ -23,7 +32,7 @@ export default function Competences({reload}) {
           <br/>
         </p>
         
-        <div style={{ paddingLeft: 24 }}>
+        <div>
           {panel.listAvatars}
         </div>
     </Panel>
@@ -33,8 +42,9 @@ export default function Competences({reload}) {
   return (
     <Collapse 
       accordion={true}
-      bordered={false}
       onChange={reload}
+      bordered={false}
+      expandIcon={({ isActive }) => <Icon type="caret-right" rotate={isActive ? 90 : 0} />}
       expandIconPosition={'left'}>
         {compPanels}
     </Collapse>
