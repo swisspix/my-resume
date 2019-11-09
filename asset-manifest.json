@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6d0d489b.chunk.css",
-    "main.js": "/static/js/main.66009f16.chunk.js",
-    "main.js.map": "/static/js/main.66009f16.chunk.js.map",
+    "main.js": "/static/js/main.dfa9515b.chunk.js",
+    "main.js.map": "/static/js/main.dfa9515b.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.33097504.js",
     "runtime~main.js.map": "/static/js/runtime~main.33097504.js.map",
-    "static/css/2.26a004a6.chunk.css": "/static/css/2.26a004a6.chunk.css",
-    "static/js/2.88c16768.chunk.js": "/static/js/2.88c16768.chunk.js",
-    "static/js/2.88c16768.chunk.js.map": "/static/js/2.88c16768.chunk.js.map",
+    "static/css/2.b9759ae0.chunk.css": "/static/css/2.b9759ae0.chunk.css",
+    "static/js/2.4e359aae.chunk.js": "/static/js/2.4e359aae.chunk.js",
+    "static/js/2.4e359aae.chunk.js.map": "/static/js/2.4e359aae.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.883cd3cfbebc96465560c6fb765ce41a.js": "/precache-manifest.883cd3cfbebc96465560c6fb765ce41a.js",
+    "precache-manifest.b324f14db1fda6242f3775006224942c.js": "/precache-manifest.b324f14db1fda6242f3775006224942c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.26a004a6.chunk.css.map": "/static/css/2.26a004a6.chunk.css.map",
+    "static/css/2.b9759ae0.chunk.css.map": "/static/css/2.b9759ae0.chunk.css.map",
     "static/css/main.6d0d489b.chunk.css.map": "/static/css/main.6d0d489b.chunk.css.map",
     "static/media/DCUP.png": "/static/media/DCUP.70dd6a11.png",
     "static/media/E03.png": "/static/media/E03.86831756.png",
@@ -24,6 +24,8 @@
     "static/media/UKFlag.jpg": "/static/media/UKFlag.9fb86d41.jpg",
     "static/media/background-white.jpg": "/static/media/background-white.da386a91.jpg",
     "static/media/baleinev.jpg": "/static/media/baleinev.28a1c03a.jpg",
+    "static/media/beezup.png": "/static/media/beezup.16a12621.png",
+    "static/media/channable.jpg": "/static/media/channable.88d2d55a.jpg",
     "static/media/fintan.jpg": "/static/media/fintan.9a8eb5ff.jpg",
     "static/media/zach2.jpg": "/static/media/zach2.84b14b72.jpg"
   }
