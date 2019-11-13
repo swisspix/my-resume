@@ -33,7 +33,7 @@ class PortfolioContainer extends Component{
                 <>
                 <StackGrid
                     monitorImagesLoaded={false}
-                    columnWidth={width <= 768 ? '100%' : 270}
+                    columnWidth={width <= 768 ? '100%' : 320}
                     gridRef={el => this.grid = el}
                     gutterWidth={30}
                     gutterHeight={30}

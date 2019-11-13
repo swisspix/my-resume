@@ -4,6 +4,7 @@ import PopcreateurPolar from '../img/miniaturesProjets/Popcreateur_polarCircle.p
 import DCUP from '../img/miniaturesProjets/DCUP.png'
 import Hydro2017 from '../img/miniaturesProjets/Hydrocontest2017.png'
 import Beleinev2018 from '../img/miniaturesProjets/baleinev.jpg'
+import TTTT from '../img/miniaturesProjets/TTTT.png'
 
 const VideosData = [
     {
@@ -53,11 +54,20 @@ const VideosData = [
     },
     {
         id:'5',
-        titre:'Aftermovie',
-        titrebis:'Baleinev',
+        titre:'Aftermovie Baleinev 2018',
+        titrebis:'Aftermovie',
         url:'https://www.youtube.com/watch?v=4vR7Dz5EUrM',
         description:"Aftermovie du Festival Baleinev 2019 à l'HEIG d'Yverdon. Puppetmastaz, KT Gorique, et plein d'autre artistes de talents ont su honorer les scènes montées par les etudiants de l'école, passionés de musique comme je le suis ! ",
         miniature:Beleinev2018,
+        annee:'2018'
+    },
+    {
+        id:'6',
+        titre:'"Toi Tu Te Tais"',
+        titrebis:'Captation/DVD',
+        url:'https://www.youtube.com/watch?v=JCkJoyS91-E',
+        description:`Captation du spectacle de Narcisse  "Toi Tu Te Tais" en repésentation au théatre Benno Besson à Yverdon les 27 et 28 avril 2018 pour la production du DVD du spectacle.`,
+        miniature:TTTT,
         annee:'2018'
     }
 ]

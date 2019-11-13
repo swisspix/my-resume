@@ -10,7 +10,7 @@ export default function Apropos() {
             </Paragraph>
             <Paragraph>
                 Je m’appelle Antoine Lot j’ai 25 ans et j’ai été diplômé en 2018 comme <b>ingénieur des médias</b> à <b>la HEIG-VD</b> d’Yverdon en Suisse. 
-                Passionné par les <b>nouvelles technologies</b>, <b>le monde du design</b> et la <b>culture web</b>, me voila maintenant à me présenter à vous sur la toile 
+                Passionné par les <b>nouvelles technologies</b>, <b>le monde du design</b> et la <b>culture web</b>.
             </Paragraph>
             <Paragraph>
                 Passionné par le monde de la <b>communication</b>, la <b>vidéo</b>, et plus récemment par le <b>développement web</b>, me voilà aujourd’hui en quête de nouvelles expériences qui puissent enrichir mes compétences dans le domaine du digital. 

@@ -67,7 +67,7 @@ function AboutPage() {
                     <Col span={2} >
                     <Anchor offsetTop={20} style={{paddingLeft:20, backgroundColor:'rgba(225,225,225,0)'}}>
                         <br/>
-                        <Link href="#acceuil" title="Acceuil"/>
+                        <Link href="#acceuil" title="Accueil"/>
                         <Link href="#portfolio" title="Portfolio"/>
                         <Link href="#contact" title="Contact"/>
                     </Anchor>
