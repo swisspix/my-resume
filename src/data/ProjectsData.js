@@ -5,6 +5,7 @@ import DCUP from '../img/miniaturesProjets/DCUP.png'
 import Hydro2017 from '../img/miniaturesProjets/Hydrocontest2017.png'
 import Beleinev2018 from '../img/miniaturesProjets/baleinev.jpg'
 import TTTT from '../img/miniaturesProjets/TTTT.png'
+import HTE from '../img/miniaturesProjets/HTE.png'
 
 const VideosData = [
     {
@@ -69,7 +70,17 @@ const VideosData = [
         description:`Captation du spectacle de Narcisse  "Toi Tu Te Tais" en repésentation au théatre Benno Besson à Yverdon les 27 et 28 avril 2018 pour la production du DVD du spectacle.`,
         miniature:TTTT,
         annee:'2018'
+    },
+    {
+        id:'7',
+        titre:'Hotel Tech Event 2019',
+        titrebis:'Hotel Spider',
+        url:'https://www.youtube.com/watch?v=CtS0uYDcYWs',
+        description:`L’HotelTech Event a le but d’échanger notre Know-How dans le domaine de la technologie hôtelière. C’est un forum qui permet aux hôteliers de partager leurs pratiques ainsi que leurs connaissances afin d’apporter de nouvelles idées, inspirations et solutions dans le domaine de l’hôtellerie.`,
+        miniature:HTE,
+        annee:'2019'
     }
+
 ]
 
 export default VideosData

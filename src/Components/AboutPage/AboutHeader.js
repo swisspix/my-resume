@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Avatar, Row, Col, Typography, Icon, Button} from 'antd';
+import {Avatar, Row, Col, Typography, Icon, Button, Spin} from 'antd';
 import ReactRotatingText from 'react-rotating-text'
 import '../../css/reactrotating.css'
 import { Link } from "react-router-dom";

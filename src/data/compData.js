@@ -152,7 +152,7 @@ export const CompPanelData = [
     id:0,
     header:'Web',
     icon:<Icon type="chrome" />,
-    text:`Que ce soit dans le domaine du devellopement d'interfaces, de gestion de bases de données ou d'herbergement, je suis aujourd'hui à 2 ans d'experiences dans le domaines de la créatio et de la gestion web.`,
+    text:`Avec 2 ans d'experience dans le domaines de la création et de la gestion web. Je suis toujours en quête de nouveaux défis`,
     listAvatars:webavatars
   },
   {
@@ -171,7 +171,7 @@ export const CompPanelData = [
   },
   {
     id:3,
-    header:"Gestion E-Commerce",
+    header:"E-Commerce",
     icon:<Icon type="shop" />,
     text:`J'ai su développer des compétences dans la gestion de E-commerce d'un magasin en ligne. Du travail de gestion d'interface, d'indexation de produits et d'optimisation de l'UX ont été de mise. `,
     listAvatars:ecavatar
