@@ -10,6 +10,24 @@ import HTE from '../img/miniaturesProjets/HTE.png'
 const VideosData = [
     {
         id:'0',
+        titre:'"Toi Tu Te Tais"',
+        titrebis:'Captation/DVD',
+        url:'https://www.youtube.com/watch?v=JCkJoyS91-E',
+        description:`Captation du spectacle de Narcisse  "Toi Tu Te Tais" en repésentation au théatre Benno Besson à Yverdon les 27 et 28 avril 2018 pour la production du DVD du spectacle.`,
+        miniature:TTTT,
+        annee:'2018'
+    },
+    {
+        id:'1',
+        titre:'Hotel Tech Event 2019',
+        titrebis:'Hotel Spider',
+        url:'https://www.youtube.com/watch?v=CtS0uYDcYWs',
+        description:`L’HotelTech Event a le but d’échanger notre Know-How dans le domaine de la technologie hôtelière. C’est un forum qui permet aux hôteliers de partager leurs pratiques ainsi que leurs connaissances afin d’apporter de nouvelles idées, inspirations et solutions dans le domaine de l’hôtellerie.`,
+        miniature:HTE,
+        annee:'2019'
+    },
+    {
+        id:'2',
         titre:'Trailer INSITU',
         titrebis:'Pop Up Mag',
         url:'https://vimeo.com/355950463',
@@ -18,7 +36,7 @@ const VideosData = [
         annee:'2018'
     },
     {
-        id:'1',
+        id:'3',
         titre:'Trailer E03',
         titrebis:'Baleinev',
         url:'https://vimeo.com/355950419',
@@ -27,7 +45,7 @@ const VideosData = [
         annee:'2018'
     },
     {
-        id:'2',
+        id:'4',
         titre:'Pop Créateurs : Polar Circles',
         titrebis:'Pop Up Mag',
         url:'https://vimeo.com/355950284',
@@ -45,7 +63,7 @@ const VideosData = [
     //     annee:'2018'
     // },
     {
-        id:'4',
+        id:'5',
         titre:"VideoRecap'",
         titrebis:'Hydrocontest',
         url:'https://www.youtube.com/watch?v=EKyJR2DoRQw',
@@ -54,7 +72,7 @@ const VideosData = [
         annee:'2017'
     },
     {
-        id:'5',
+        id:'6',
         titre:'Aftermovie Baleinev 2018',
         titrebis:'Aftermovie',
         url:'https://www.youtube.com/watch?v=4vR7Dz5EUrM',
@@ -62,24 +80,7 @@ const VideosData = [
         miniature:Beleinev2018,
         annee:'2018'
     },
-    {
-        id:'6',
-        titre:'"Toi Tu Te Tais"',
-        titrebis:'Captation/DVD',
-        url:'https://www.youtube.com/watch?v=JCkJoyS91-E',
-        description:`Captation du spectacle de Narcisse  "Toi Tu Te Tais" en repésentation au théatre Benno Besson à Yverdon les 27 et 28 avril 2018 pour la production du DVD du spectacle.`,
-        miniature:TTTT,
-        annee:'2018'
-    },
-    {
-        id:'7',
-        titre:'Hotel Tech Event 2019',
-        titrebis:'Hotel Spider',
-        url:'https://www.youtube.com/watch?v=CtS0uYDcYWs',
-        description:`L’HotelTech Event a le but d’échanger notre Know-How dans le domaine de la technologie hôtelière. C’est un forum qui permet aux hôteliers de partager leurs pratiques ainsi que leurs connaissances afin d’apporter de nouvelles idées, inspirations et solutions dans le domaine de l’hôtellerie.`,
-        miniature:HTE,
-        annee:'2019'
-    }
+    
 
 ]
 
