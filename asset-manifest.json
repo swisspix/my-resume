@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.6d0d489b.chunk.css",
-    "main.js": "/static/js/main.b405cdfb.chunk.js",
-    "main.js.map": "/static/js/main.b405cdfb.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.33097504.js",
-    "runtime~main.js.map": "/static/js/runtime~main.33097504.js.map",
-    "static/css/2.b9759ae0.chunk.css": "/static/css/2.b9759ae0.chunk.css",
-    "static/js/2.7bddaa25.chunk.js": "/static/js/2.7bddaa25.chunk.js",
-    "static/js/2.7bddaa25.chunk.js.map": "/static/js/2.7bddaa25.chunk.js.map",
+    "main.js": "/static/js/main.27cbdaf5.chunk.js",
+    "main.js.map": "/static/js/main.27cbdaf5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5c74c28c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5c74c28c.js.map",
+    "static/css/2.67ac2d8c.chunk.css": "/static/css/2.67ac2d8c.chunk.css",
+    "static/js/2.d666d073.chunk.js": "/static/js/2.d666d073.chunk.js",
+    "static/js/2.d666d073.chunk.js.map": "/static/js/2.d666d073.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ba7d62ac3a98fe4c1a0977d7c528ab2c.js": "/precache-manifest.ba7d62ac3a98fe4c1a0977d7c528ab2c.js",
+    "precache-manifest.93d3f4c2bfb9916cc1986735c5f2012d.js": "/precache-manifest.93d3f4c2bfb9916cc1986735c5f2012d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.b9759ae0.chunk.css.map": "/static/css/2.b9759ae0.chunk.css.map",
+    "static/css/2.67ac2d8c.chunk.css.map": "/static/css/2.67ac2d8c.chunk.css.map",
     "static/css/main.6d0d489b.chunk.css.map": "/static/css/main.6d0d489b.chunk.css.map",
+    "static/js/2.d666d073.chunk.js.LICENSE": "/static/js/2.d666d073.chunk.js.LICENSE",
+    "static/media/AntoineLot_CV.pdf": "/static/media/AntoineLot_CV.15328d7e.pdf",
     "static/media/DCUP.png": "/static/media/DCUP.70dd6a11.png",
     "static/media/E03.png": "/static/media/E03.86831756.png",
     "static/media/FVALogo.png": "/static/media/FVALogo.adb7cb83.png",
@@ -30,5 +32,12 @@
     "static/media/channable.jpg": "/static/media/channable.88d2d55a.jpg",
     "static/media/fintan.jpg": "/static/media/fintan.9a8eb5ff.jpg",
     "static/media/zach2.jpg": "/static/media/zach2.84b14b72.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c74c28c.js",
+    "static/css/2.67ac2d8c.chunk.css",
+    "static/js/2.d666d073.chunk.js",
+    "static/css/main.6d0d489b.chunk.css",
+    "static/js/main.27cbdaf5.chunk.js"
+  ]
 }
