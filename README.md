@@ -1,6 +1,6 @@
-# CV/Portfolio by Antoine Lot 
+# CV - Portfolio Antoine Lot 
 
-=> www.antoinelot.com
+www.antoinelot.com
 
 
 
